@@ -1,0 +1,13 @@
+<div style="text-align:center">
+  <h1>{{title}}</h1>
+{{currencies}}
+  <ul class="currencies-list">
+      <currency-detail
+      *ngFor="let currency of currencies"
+      [class.selected]="currency === selectedCurrency" 
+      [currency]="currency">         
+      </currency-detail>    
+  </ul>
+ 
+</div>
+
